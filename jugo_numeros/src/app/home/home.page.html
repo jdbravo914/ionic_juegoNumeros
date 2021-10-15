@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Juego numeros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Juan Sánchez | Ionic - Angular</strong>
+    <p>Colocar resultado adecuado</p>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-label>Numeros:        </ion-label>
+            <strong>{{num1}}</strong>
+            <strong>{{op}}</strong>
+            <strong>{{num2}}</strong>
+            <ion-input type="text" placeholder="Escriba el resultado" [(ngModel)]="resultado"></ion-input>
+            <ion-button color="secondary" (click)="aleatorio()">Generar nuevos números</ion-button>
+            
+          </ion-card-content>
+          <ion-button color="primary" (click)="presentAlert()">Verificar</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
+</ion-content>
